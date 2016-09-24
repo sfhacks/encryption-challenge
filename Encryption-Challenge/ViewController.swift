@@ -30,10 +30,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let password = "sfhacks"
+        // **************************************************************************//
+        
         
         var decryptedWord = "" // This is where you will store your answer to
         
-        let name = "Amar_R" // Your first name here!
+        let name = "YOUR NAME HERE" // Your first name here!
         
         // Solve the problem
         
@@ -42,22 +45,35 @@ class ViewController: UIViewController {
         let alphabet = "abcdefghijklmnopqrstuvwxyz"
         
         
-        for (_, element1) in encrypted.characters.enumerated() {
-            for(index, element) in cipher.characters.enumerated() {
-                if(element1==element) {
-                    decryptedWord += alphabet[index]
-                }
-            }
-        }
-        
-        print(decryptedWord)
         
         
-        decryptedWord = "" // your final answer!
-        
-        Alamofire.request("Sample POST request" + name) // POST request
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        decryptedWord = "Final Answer!" // your final answer!
+        
+        // **************************************************************************//
+        
+        let parameters: Parameters = [
+            "key": name,
+            "value": decryptedWord,
+            "password": password
+        ]
+        
+        Alamofire.request("http://results.sfhacks.club", method: .post, parameters: parameters)
     }
     
     
