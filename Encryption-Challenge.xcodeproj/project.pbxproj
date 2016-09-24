@@ -12,9 +12,11 @@
 		896A23FC1D96396E009B1A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A23FA1D96396E009B1A9C /* Main.storyboard */; };
 		896A23FE1D96396E009B1A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896A23FD1D96396E009B1A9C /* Assets.xcassets */; };
 		896A24011D96396E009B1A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896A23FF1D96396E009B1A9C /* LaunchScreen.storyboard */; };
+		CDFE69CB0B5B1F0C30F92604 /* Pods_Encryption_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43468FEE572EE944B6BDFC69 /* Pods_Encryption_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43468FEE572EE944B6BDFC69 /* Pods_Encryption_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Encryption_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A23F31D96396E009B1A9C /* Encryption-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Encryption-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A23F61D96396E009B1A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896A23F81D96396E009B1A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		896A23FD1D96396E009B1A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896A24001D96396E009B1A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896A24021D96396E009B1A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0149D7A11EBA84B9F3606CD /* Pods-Encryption-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Encryption-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Encryption-Challenge/Pods-Encryption-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C9C08E999AFA0686AB995F /* Pods-Encryption-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Encryption-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Encryption-Challenge/Pods-Encryption-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFE69CB0B5B1F0C30F92604 /* Pods_Encryption_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				896A23F51D96396E009B1A9C /* Encryption-Challenge */,
 				896A23F41D96396E009B1A9C /* Products */,
+				977144AB0F5444330FADD6EB /* Pods */,
+				97FF1082084E14115A73098B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "Encryption-Challenge";
 			sourceTree = "<group>";
 		};
+		977144AB0F5444330FADD6EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0149D7A11EBA84B9F3606CD /* Pods-Encryption-Challenge.debug.xcconfig */,
+				F1C9C08E999AFA0686AB995F /* Pods-Encryption-Challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97FF1082084E14115A73098B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43468FEE572EE944B6BDFC69 /* Pods_Encryption_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 896A24051D96396E009B1A9C /* Build configuration list for PBXNativeTarget "Encryption-Challenge" */;
 			buildPhases = (
+				6F722364C2B398F13B23D464 /* [CP] Check Pods Manifest.lock */,
 				896A23EF1D96396E009B1A9C /* Sources */,
 				896A23F01D96396E009B1A9C /* Frameworks */,
 				896A23F11D96396E009B1A9C /* Resources */,
+				05BDEFCACB464A64EE3CCFA8 /* [CP] Embed Pods Frameworks */,
+				BB4980D2DF87429735188D3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05BDEFCACB464A64EE3CCFA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Encryption-Challenge/Pods-Encryption-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F722364C2B398F13B23D464 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4980D2DF87429735188D3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Encryption-Challenge/Pods-Encryption-Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		896A23EF1D96396E009B1A9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +257,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +307,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -257,7 +334,9 @@
 		};
 		896A24061D96396E009B1A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0149D7A11EBA84B9F3606CD /* Pods-Encryption-Challenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 644K27Q47A;
 				INFOPLIST_FILE = "Encryption-Challenge/Info.plist";
@@ -270,7 +349,9 @@
 		};
 		896A24071D96396E009B1A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C9C08E999AFA0686AB995F /* Pods-Encryption-Challenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 644K27Q47A;
 				INFOPLIST_FILE = "Encryption-Challenge/Info.plist";
@@ -300,6 +381,7 @@
 				896A24071D96396E009B1A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 extension String {
     
@@ -53,6 +54,8 @@ class ViewController: UIViewController {
         
         
         decryptedWord = "" // your final answer!
+        
+        Alamofire.request("Sample POST request" + name) // POST request
         
         
     }
