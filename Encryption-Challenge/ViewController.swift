@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         var decryptedWord = "" // This is where you will store your answer to
         
-        let name = "Harambe" // Your first name here!
+        let name = "Your Name!" // Your first name here!
         
         // Solve the problem
         
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         
         
         
-        decryptedWord = "I have information that will lead to Hillary's arrest..." // your final answer!
+        decryptedWord = "Final Answer!" // your final answer!
         
         // **************************************************************************//
         
