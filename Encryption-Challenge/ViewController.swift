@@ -36,40 +36,31 @@ class ViewController: UIViewController {
         
         var decryptedWord = "" // This is where you will store your answer to
         
-        let name = "YOUR NAME HERE" // Your first name here!
+        let name = "sfhacks" // Your first name here!
         
         // Solve the problem
         
         let cipher = "qwertyuiopasdfghiklzxcvbnm"
         var encrypted = "ztlzofu"
         let alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+        for (_, element1) in encrypted.characters.enumerated() {
+            for(index, element) in cipher.characters.enumerated() {
+                if(element1==element) {
+                    decryptedWord += alphabet[index]
+                }
+            }
+        }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        decryptedWord = "Final Answer!" // your final answer!
+        print(decryptedWord)
+
+        // decryptedWord should have your final answer here!
         
         // **************************************************************************//
         
         let parameters: Parameters = [
-            "key": name,
-            "value": decryptedWord,
+            "name": name,
+            "answer": decryptedWord,
             "password": password
         ]
         
