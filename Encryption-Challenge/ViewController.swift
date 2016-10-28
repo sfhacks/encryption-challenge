@@ -36,11 +36,8 @@ class ViewController: UIViewController {
         
         var decryptedWord = "" // This is where you will store your answer to
         
-<<<<<<< HEAD
         let name = "sfhacks" // Your first name here!
-=======
         let name = "Your Name!" // Your first name here!
->>>>>>> origin/master
         
         // Solve the problem
         
